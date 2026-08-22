@@ -5,7 +5,7 @@ import { toast } from "sonner";
 import { motion } from "framer-motion";
 import heroAsset from "@/assets/login-bg-trucks.png";
 import { supabase } from "@/integrations/supabase/client";
-import logoAsset from "@/assets/logo.png";
+import logoAsset from "@/assets/bf101-logo.webp";
 
 export const Route = createFileRoute("/")({
   ssr: false,
