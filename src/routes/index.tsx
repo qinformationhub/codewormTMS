@@ -3,9 +3,9 @@ import { useEffect, useState } from "react";
 import { KeyRound, LogIn, Mail, ShieldCheck } from "lucide-react";
 import { toast } from "sonner";
 import { motion } from "framer-motion";
-import heroAsset from "@/assets/login-bg-trucks.png.asset.json";
+import heroAsset from "@/assets/login-bg-trucks.png";
 import { supabase } from "@/integrations/supabase/client";
-import logoAsset from "@/assets/logo.png.asset.json";
+import logoAsset from "@/assets/logo.png";
 
 export const Route = createFileRoute("/")({
   ssr: false,
@@ -69,7 +69,7 @@ function LoginPage() {
           className="w-full h-full"
         >
           <img
-            src={heroAsset.url}
+            src={heroAsset}
             alt="Global Logistics Network"
             className="w-full h-full object-cover opacity-90 brightness-110 scale-110"
           />
@@ -103,7 +103,7 @@ function LoginPage() {
 
             <div className="py-4">
            
-              <img src={logoAsset.url} className="h-16 w-auto object-contain mx-auto lg:mx-0" />
+              <img src={logoAsset} className="h-16 w-auto object-contain mx-auto lg:mx-0" />
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tighter leading-[0.9] font-space">
