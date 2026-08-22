@@ -23,7 +23,7 @@ import { useSessionProfile } from "@/hooks/use-session";
 import { initials, type AppRole } from "@/lib/tms";
 import { cn } from "@/lib/utils";
 import { NotificationCenter } from "./notification-center";
-import logoAsset from "@/assets/logo.png.asset.json";
+import logoAsset from "@/assets/bf101-logo.webp";
 
 
 interface NavItem {
@@ -94,7 +94,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       <header className="sticky top-0 z-30 flex h-16 items-center gap-4 border-b border-border bg-black px-4 lg:px-6">
         <div className="flex items-center gap-3">
           <Link to="/dashboard" className="flex flex-col gap-1">
-            <img src={logoAsset.url} className="h-8 w-auto object-contain brightness-0 invert" />
+            <img src={logoAsset} className="h-8 w-auto object-contain brightness-0 invert" />
           </Link>
           <div className="hidden h-6 w-px bg-white/20 md:block" />
         </div>
@@ -155,7 +155,7 @@ export function AppShell({ children }: { children: ReactNode }) {
         <aside className="sticky top-16 hidden h-[calc(100vh-4rem)] w-64 shrink-0 flex-col justify-between bg-sidebar px-4 py-6 md:flex border-r border-sidebar-border">
           <div>
             <div className="px-3">
-              <img src={logoAsset.url} className="h-10 w-auto object-contain mb-1" />
+              <img src={logoAsset} className="h-10 w-auto object-contain mb-1" />
               <p className="label-mono text-[10px] text-sidebar-foreground/50 uppercase tracking-widest">{nav.brand}</p>
             </div>
             <nav className="mt-8 space-y-0.5 overflow-y-auto max-h-[calc(100vh-22rem)] custom-scrollbar">
