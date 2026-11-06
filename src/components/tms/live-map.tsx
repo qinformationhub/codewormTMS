@@ -31,7 +31,7 @@ export default function LiveMap({ loads }: { loads: LoadWithParties[] }) {
       zoom: 4,
       scrollWheelZoom: false,
     });
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"?key=cb1_53q2_1_bc96415036e0331f11c8b605, {
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?key=cb1_53q2_1_bc96415036e0331f11c8b605", {
       attribution: "&copy; OpenStreetMap &copy; CARTO",
       maxZoom: 18,
     }).addTo(mapRef.current);
